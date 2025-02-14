@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <h1>Inventory Management System</h1>
+
+    <div id="inventory-container"></div>
+
+    <h2>Add Item</h2>
+    <form id="addItemForm">
+        <label for="name">Item Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="type">Type:</label>
+        <input type="text" id="type" required>
+
+        <label for="price">Price:</label>
+        <input type="number" id="price" required>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" required>
+
+        <label for="description">Description:</label>
+        <input type="text" id="description" required>
+
+        <button type="submit">Add Item</button>
+    </form>
+
+    <h2>Search Item</h2>
+    <input type="text" id="searchQuery" placeholder="Search by name or type">
+    <button id="searchButton">Search</button>
+
+    <h2>Inventory Value</h2>
+    <p id="totalValue">Total Inventory Value: $0</p>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
