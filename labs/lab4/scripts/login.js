@@ -1,13 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
-    console.log("✅ login.js loaded!");
+    console.log("login.js is loaded");
 
-    let users = new Map(JSON.parse(localStorage.getItem("users"))) || new Map();
+    let users = new Map(JSON.parse(localStorage.getItem("users")) || []);
 
     document.getElementById("loginForm").addEventListener("submit", (e) => {
-        e.preventDefault();
+        e.preventDefault(); 
 
-        const { value: loginUser } = document.getElementById("loginUser");
-        const { value: loginPass } = document.getElementById("loginPass");
+        const loginUser = document.getElementById("loginUser").value.trim();
+        const loginPass = document.getElementById("loginPass").value;
 
         if (!users.has(loginUser)) {
             document.getElementById("loginUserErr").innerText = "User not found!";
@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
+        console.log("User logged in:", loginUser);
         alert("Login successful!");
     });
 });
