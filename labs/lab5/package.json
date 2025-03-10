@@ -1,0 +1,25 @@
+{
+  "name": "lab5",
+  "version": "1.0.0",
+  "description": "recipeapp",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.cs.dal.ca/ivagba/csci-3172/-/tree/main/labs/lab5"
+  },
+  "keywords": [
+    "recipe",
+    "recommender",
+    "food",
+    "cooking",
+    "API",
+    "web",
+    "app"
+  ],
+  "author": "Efe Ivagba",
+  "license": "ISC"
+}
