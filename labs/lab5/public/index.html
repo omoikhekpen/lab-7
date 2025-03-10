@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recipe Recommender App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Recipe Recommender</h1>
+  </header>
+  <main>
+    <section id="inputSection">
+      <form id="recipeForm">
+        <label for="diet">Dietary Preference:</label>
+        <input type="text" id="diet" name="diet" placeholder="e.g., vegetarian">
+
+        <label for="ingredients">Ingredients (comma separated):</label>
+        <input type="text" id="ingredients" name="ingredients" placeholder="e.g., tomato, basil">
+
+        <button type="submit">Get Recipes</button>
+      </form>
+    </section>
+    <section id="resultsSection">
+      <h2>Recipe Suggestions</h2>
+      <div id="recipes"></div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

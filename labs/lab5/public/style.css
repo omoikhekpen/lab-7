@@ -1,0 +1,57 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #ff69b4; /* Hot pink background */
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  main {
+    padding: 1rem;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  label {
+    margin-top: 1rem;
+  }
+  
+  input {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  button {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    background-color: #ff69b4; /* Hot pink */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #ff1493; /* Deep pink */
+  }
+  
+  #resultsSection {
+    margin-top: 2rem;
+  }
+  
+  .recipe {
+    border: 1px solid #ff69b4; /* Hot pink border */
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
