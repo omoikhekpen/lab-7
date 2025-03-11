@@ -31,4 +31,4 @@ Thanks to my instructors and TAs for their support and feedback.
 https://git.cs.dal.ca/ivagba/csci-3172/-/tree/main/labs/lab5
 
 ### Deploy Link
-(To be added once the project is deployed on Netlify.)
+https://recipebuilderefe.netlify.app/
