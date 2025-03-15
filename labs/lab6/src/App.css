@@ -1,0 +1,73 @@
+/* src/App.css */
+
+/* Global styles */
+body {
+    background-color: #f8f9fa; /* Light background for a clean look */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header styling */
+  header {
+    background-color: #343a40; /* Dark header background */
+    color: #fff;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    margin: 0;
+    padding: 1rem 0;
+  }
+  
+  /* Navigation styling */
+  .nav {
+    justify-content: center;
+  }
+  
+  .nav-link {
+    font-size: 1.1rem;
+    margin: 0 1rem;
+  }
+  
+  /* Main content styling */
+  main {
+    padding: 2rem 0;
+  }
+  
+  /* Footer styling */
+  footer {
+    background-color: #e9ecef;
+    color: #495057;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  
+  /* Custom card styling for products (cakes) */
+  .card {
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Responsive image styling */
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Container padding for a better layout */
+  .container {
+    padding: 1rem;
+  }
+  
+  /* 404 page specific styling */
+  .not-found {
+    text-align: center;
+    padding: 3rem;
+  }
+  
