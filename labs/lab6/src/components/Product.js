@@ -1,12 +1,14 @@
 // src/components/Products.js
+// Products page showcasing a selection of cakes available at Efe's Cakes.
+
 import React from 'react';
 
 function Products() {
-  // Sample products data
+  // Sample cakes data
   const cakes = [
-    { id: 1, title: "Chocolate Dream Cake", description: "Rich chocolate cake with a creamy ganache topping." },
-    { id: 2, title: "Vanilla Bean Delight", description: "Classic vanilla cake with a twist of real vanilla bean." },
-    { id: 3, title: "Strawberry Fantasy", description: "Light and airy cake layered with fresh strawberry filling." },
+    { id: 1, title: "Chocolate Dream Cake", description: "Rich chocolate cake with creamy ganache." },
+    { id: 2, title: "Vanilla Bean Delight", description: "Classic vanilla cake with real vanilla bean flavor." },
+    { id: 3, title: "Strawberry Fantasy", description: "Light cake layered with fresh strawberry filling." },
   ];
 
   return (

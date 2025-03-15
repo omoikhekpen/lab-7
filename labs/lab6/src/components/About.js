@@ -1,4 +1,6 @@
 // src/components/About.js
+// About page describing Efe's Cakes and our passion for baking.
+
 import React from 'react';
 
 function About() {

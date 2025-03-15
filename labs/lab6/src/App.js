@@ -1,4 +1,6 @@
 // src/App.js
+// Main application component handling routing and layout.
+
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
@@ -10,6 +12,7 @@ import NotFound from './components/NotFound';
 
 function App() {
   return (
+    // Using a flex container to keep the footer at the bottom when content is short.
     <div className="d-flex flex-column min-vh-100">
       <Header />
       <main className="flex-grow-1 container my-4">
