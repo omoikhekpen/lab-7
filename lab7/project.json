@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Lab7 Project",
+    "author": "Efe Ivagba",
+    "languages": ["JavaScript", "React", "Express"],
+    "description": "A full-stack web application demonstrating interactivity and API integration."
+  },
+  {
+    "name": "Recipe App Project",
+    "author": "Efe Ivagba",
+    "languages": ["HTML", "CSS", "Bootstrap"],
+    "description": "A responsive project built using Bootstrap."
+  }
+]

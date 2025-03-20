@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+/* Define my color variables */
+:root {
+  --primary-pink: #ff69b4;      /* I love this bright pink for highlights */
+  --cream: #fffdd0;             /* A soft cream background for a cozy feel */
+  --dark-bg: #222222;           /* Dark background for dark mode */
+  --dark-text: #f0e6f7;          /* Light text on dark mode for readability */
+  --light-text: #333333;        /* Dark text on light mode */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Basic body styling */
+body {
+  background-color: var(--cream);
+  color: var(--light-text);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Light mode container styling */
+.bg-light {
+  background-color: var(--cream) !important;
+  color: var(--light-text) !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Dark mode container styling */
+.bg-dark {
+  background-color: var(--dark-bg) !important;
+  color: var(--dark-text) !important;
+}
+
+/* Custom styling for buttons */
+.btn-secondary {
+  background-color: var(--primary-pink);
+  border-color: var(--primary-pink);
   color: white;
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-secondary:hover {
+  background-color: #e05aa8;
+  border-color: #e05aa8;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Styling for project cards */
+.card {
+  border: 1px solid var(--primary-pink);
+  background-color: var(--cream);
+  margin-bottom: 1rem;
+}
+
+.card-title {
+  color: var(--primary-pink);
+  font-weight: bold;
+}
+
+/* Styling for skills list items */
+.list-group-item {
+  background-color: var(--cream);
+  border: 1px solid var(--primary-pink);
+  color: var(--light-text);
+}
+
+/* Input field styling */
+input.form-control {
+  border: 1px solid var(--primary-pink);
+}
+
+/* Heading styles */
+h1, h3 {
+  color: var(--primary-pink);
+}
+
+/* Header styling */
+header {
+  background-color: var(--primary-pink);
+  color: white;
+  padding: 2rem 0;           /* Increased padding for a "fatter" header */
+  text-align: center;
+  border-bottom: 3px solid var(--light-text);
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+header h1 {
+  color: white;  /* Ensure the header text stays white */
+  margin: 0;
+}
+
+/* Footer styling */
+footer {
+  background-color: var(--primary-pink);
+  color: white;
+  padding: 1.5rem 0;
+  text-align: center;
+  margin-top: 2rem;
+  border-top: 3px solid var(--light-text);
+  font-weight: bold;
+  font-size: 1rem;
 }
