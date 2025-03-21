@@ -1,5 +1,5 @@
 const express = require('express');
-const serverless = require('serverless-http'); 
+const serverless = require('serverless-http');
 const fetch = require('node-fetch'); 
 const fs = require('fs');
 const path = require('path');
@@ -13,7 +13,7 @@ app.use((req, res, next) => {
 });
 
 // Route to return projects from projects.json.
-app.get('/api/projects', (req, res) => {
+app.get('/projects', (req, res) => {
   const projectsFile = path.join(__dirname, 'projects.json');
   fs.readFile(projectsFile, 'utf8', (err, data) => {
     if (err) {
@@ -30,13 +30,11 @@ app.get('/api/projects', (req, res) => {
   });
 });
 
-
-app.get('/api/weather', async (req, res) => {
+// Route to fetch weather data from OpenWeatherMap for Halifax, CA.
+app.get('/weather', async (req, res) => {
   try {
     const apiKey = process.env.WEATHER_API_KEY || '38707b9ec875dc6d9e520cc67d58cc9f';
     const city = 'Halifax,ca';
-    // Example API call:
-    // api.openweathermap.org/data/2.5/weather?q=Halifax,ca&APPID=YOUR_API_KEY&units=metric
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${apiKey}&units=metric`;
     const response = await fetch(url);
     if (!response.ok) {
@@ -57,7 +55,7 @@ app.get('/api/weather', async (req, res) => {
     };
     res.json(weatherData);
   } catch (error) {
-    console.error("Error in /api/weather route:", error);
+    console.error("Error in /weather route:", error);
     res.status(500).json({ error: "Failed to fetch weather data" });
   }
 });

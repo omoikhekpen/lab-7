@@ -1,9 +1,7 @@
-
 import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
-// Sample skills data for the interactive skill list.
 const skillsData = [
   "Frontend Development",
   "Backend Development",
@@ -44,8 +42,7 @@ function ThemeToggle({ theme, toggleTheme }) {
   );
 }
 
-// Component to filter and display a list of skills.
-// The skills list remains hidden until the user starts typing.
+
 function SkillList() {
   const [searchTerm, setSearchTerm] = useState('');
   const filteredSkills = skillsData.filter(skill =>
@@ -88,7 +85,8 @@ function Projects() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch('/api/projects')
+    
+    fetch('/netlify/functions/api/projects')
       .then(response => {
         if (!response.ok) {
           throw new Error('Failed to fetch projects');
@@ -142,7 +140,8 @@ function Weather() {
   const [errorWeather, setErrorWeather] = useState(null);
 
   useEffect(() => {
-    fetch('/api/weather')
+    // Fetching weather info from our Netlify Function API.
+    fetch('/netlify/functions/api/weather')
       .then(response => {
         if (!response.ok) {
           throw new Error('Failed to fetch weather');
