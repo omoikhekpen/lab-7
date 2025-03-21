@@ -1,8 +1,3 @@
-// src/App.js
-// Written by Efe Ivagba for Lab 7.
-// This app (Web Dev Skills) demonstrates web development skills by showcasing weather info,
-// an interactive skills list (hidden until you search), and projects data fetched from our Express API.
-
 import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
@@ -48,7 +43,7 @@ function ThemeToggle({ theme, toggleTheme }) {
   );
 }
 
-// SkillList component: Only shows skills when user types.
+
 function SkillList() {
   const [searchTerm, setSearchTerm] = useState('');
   const filteredSkills = skillsData.filter(skill =>

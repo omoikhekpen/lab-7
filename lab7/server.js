@@ -1,13 +1,11 @@
-// server.js
 const express = require('express');
-const fetch = require('node-fetch'); // Ensure you're using node-fetch@2
+const fetch = require('node-fetch'); 
 const fs = require('fs');
 const path = require('path');
 require('dotenv').config();
 
 const app = express();
 
-// Optional: Enable CORS for local testing if needed.
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
   next();
@@ -32,8 +30,6 @@ app.get('/api/projects', (req, res) => {
 });
 
 // Route to fetch weather data from OpenWeatherMap.
-// Example URL: api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=38707b9ec875dc6d9e520cc67d58cc9f
-// We update it to use Halifax,ca.
 app.get('/api/weather', async (req, res) => {
   try {
     const apiKey = process.env.WEATHER_API_KEY || '38707b9ec875dc6d9e520cc67d58cc9f';
