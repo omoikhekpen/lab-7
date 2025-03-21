@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
@@ -43,7 +44,8 @@ function ThemeToggle({ theme, toggleTheme }) {
   );
 }
 
-
+// Component to filter and display a list of skills.
+// The skills list remains hidden until the user starts typing.
 function SkillList() {
   const [searchTerm, setSearchTerm] = useState('');
   const filteredSkills = skillsData.filter(skill =>
@@ -79,7 +81,7 @@ function SkillList() {
   );
 }
 
-// Projects component: Fetches project data.
+// Component to fetch and display project data from the backend.
 function Projects() {
   const [projects, setProjects] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -133,7 +135,7 @@ function Projects() {
   );
 }
 
-// Weather component: Fetches weather info from the dynamic API.
+// Component to fetch and display weather info from the backend.
 function Weather() {
   const [weather, setWeather] = useState(null);
   const [loadingWeather, setLoadingWeather] = useState(true);
