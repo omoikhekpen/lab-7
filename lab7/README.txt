@@ -32,3 +32,4 @@ GitLab Repository
 https://git.cs.dal.ca/ivagba/csci-3172/-/tree/main/lab7?ref_type=heads
 
 Deploy Link
+https://webdevskills.netlify.app/
